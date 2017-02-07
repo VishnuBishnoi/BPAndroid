@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FarmerBookTool">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="2.7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bhoomiputra.views.CircleImageView
+        android:paddingTop="5dp"
+
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/farming5"
+        android:id="@+id/imageView1"
+        android:clickable="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center_horizontal"
+        style= "@style/CustomRatingBar"
+        android:numStars="5"
+        android:rating="2.3"
+        android:stepSize="0.01"
+        android:isIndicator="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Based on 23 ratings"
+        android:id="@+id/textView13"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
+
+
+
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"
+        />
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="2.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Seller Details"
+                    android:id="@+id/textView" />
+
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/user"
+                    android:id="@+id/imageView11"
+                    android:clickable="true" />
+
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/phone"
+                    android:id="@+id/imageView12"
+                    android:clickable="true" />
+
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/location"
+                    android:id="@+id/imageView13"
+                    android:clickable="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="28dp"
+                    android:text="Nand Kishore"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usernameTV"/>
+                <TextView
+                    android:text="3423432423"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/mobileTV"/>
+                <TextView
+                    android:maxLines="4"
+                    android:lines="3"
+                    android:id="@+id/addressTV"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="#2243 Gali no 3, Dhani Mohabatpur, Mandi Adampur,Hisar, Haryana 125052"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"/>
+        <LinearLayout  android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tools Details"
+                android:id="@+id/textView2" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.bhoomiputra.views.CircleImageView
+            android:layout_marginRight="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/minus"
+            android:clickable="true"
+            android:id="@+id/minus" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="land: 1 acrs"
+            android:id="@+id/landBtn"
+            android:background="@drawable/roundcorner"/>
+        <com.bhoomiputra.views.CircleImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/plus"
+            android:id="@+id/plus" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickup Date"
+        android:id="@+id/datePickerBtn"
+        android:background="@drawable/roundcorner"
+        android:layout_alignParentTop="true" />
+
+    <com.bhoomiputra.Util.MultiSelectSpinner
+        style="@style/spinner_style"
+        android:id="@+id/toolsSpin"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/datePickerBtn"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
+            <LinearLayout
+                android:layout_weight="3.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Book Now"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

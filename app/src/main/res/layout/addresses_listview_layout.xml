@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:background="@drawable/linearlayout_roundcorner">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="6.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:buttonTint="#000000" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="6.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.bhoomiputra.views.CircleImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            android:id="@+id/imageView11"
+            android:clickable="true" />
+
+        <com.bhoomiputra.views.CircleImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/phone"
+            android:id="@+id/imageView12"
+            android:clickable="true" />
+
+        <com.bhoomiputra.views.CircleImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/location"
+            android:id="@+id/imageView13"
+            android:clickable="true" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nand Kishore"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center|left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:id="@+id/textView6"
+                android:textColor="#000000"
+                android:layout_below="@+id/textView5"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:textColor="#000000"
+                android:maxLines="3"
+                android:lines="3"
+                android:id="@+id/addressTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="#2243 Gali no 3, Dhani Mohabatpur, Mandi Adampur,Hisar, Haryana 125052"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/adControls"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6">
+
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/recycle"
+                    android:clickable="true"
+                    android:id="@+id/remove"
+                    android:layout_alignTop="@+id/edit"
+                    android:layout_toLeftOf="@+id/edit"
+                    android:layout_toStartOf="@+id/edit" />
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/edit"
+                    android:clickable="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/edit" />
+                <com.bhoomiputra.views.CircleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/location"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:id="@+id/makedefalut"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/edit"
+                    android:layout_toEndOf="@+id/edit" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

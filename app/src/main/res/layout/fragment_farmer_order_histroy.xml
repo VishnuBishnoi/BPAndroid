@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bhoomiputra.Fragments.FarmerOrderHistroy"
+    android:background="#ad000000">
+
+    <ListView
+        android:layout_margin="10dp"
+        android:dividerHeight="12.0dp"
+        android:divider="#00cbf558"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

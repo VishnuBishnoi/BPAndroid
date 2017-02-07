@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bhoomiputra">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.LoginAndSignup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.FarmerBookTool" />
+        <activity android:name=".Activities.FarmerSearchTool" />
+        <activity android:name=".Activities.Accept_or_Cancel_Booking" />
+        <activity android:name=".Activities.FarmerHistoryDetails" />
+        <activity android:name=".Activities.FarmerBookingReview" />
+        <activity android:name=".Activities.ProfileSettings" />
+        <activity android:name=".Activities.SellerAddNewTool" />
+        <activity android:name=".Activities.AddressSettings" />
+        <activity android:name=".Activities.Edit_or_Add_address" />
+        <activity
+            android:name=".Activities.UserHome"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

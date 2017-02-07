@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Activities.LoginAndSignup">
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/imageGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+        </HorizontalScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/loginRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ad000000">
+        <Spinner
+            android:layout_above="@+id/editText2"
+            style="@style/spinner_style"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:id="@+id/loginas"
+            android:layout_alignParentLeft="true"
+            />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:hint="Username or email"
+            android:background="@drawable/commonselector"
+            android:textColorHint="@color/hintcolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/editText"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/editText"
+            android:layout_above="@+id/button7"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/commonselector"
+            android:textColorHint="@color/hintcolor"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOG IN"
+            android:id="@+id/button7"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#019bc2"
+            android:textColor="#ffffff"
+            android:clickable="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/link_new_user"
+            android:id="@+id/link_newuserTV"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:textColor="#a2a2a2"
+            android:textSize="45px" />
+
+
+    </RelativeLayout>
+
+    <!--signup view-->
+    <ScrollView
+        android:visibility="gone"
+        android:background="#ca000000"
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/registerAsSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                />
+
+
+
+            <com.bhoomiputra.views.CircleImageView
+                android:paddingTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profilepic"
+                android:id="@+id/profilePicImageView"
+                android:clickable="true"
+                android:layout_marginBottom="10dp" />
+
+
+            <EditText
+                android:hint="@string/user_name"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/editText6"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/enter_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/editText7"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor" />
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/enter_name"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/editText8"/>
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/stateSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                />
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/districtSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                />
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tehSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                />
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/village"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/editText3"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/houseno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/editText4"/>
+
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/commonselector"
+                android:textColorHint="@color/hintcolor"
+                android:inputType="number"
+                android:id="@+id/editText5"/>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:text="@string/register"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#019bc2"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:id="@+id/registerBtn"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/link_old_user"
+                android:id="@+id/link_olduserTV"
+                android:layout_marginBottom="20dp"
+                android:textColor="#a2a2a2"
+                android:textSize="45px" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

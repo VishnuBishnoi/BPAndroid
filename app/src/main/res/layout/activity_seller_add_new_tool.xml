@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bhoomiputra.Activities.SellerAddNewTool">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/farming5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/line1"
+        android:background="#000000"
+        android:layout_below="@+id/imageView"/>
+    <Spinner
+        style="@style/spinner_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/loginas"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        style="@style/spinner_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tool"
+        android:layout_below="@+id/loginas"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/editText15"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:hint="Charge in rupee"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/commonselector"
+        android:textColorHint="@color/hintcolor"
+        android:layout_below="@+id/chargetype"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        style="@style/spinner_style"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/chargetype"
+        android:layout_below="@+id/tool"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Tool"
+        android:id="@+id/button10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#019bc2"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Slect tool image"
+        android:id="@+id/textView32"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
